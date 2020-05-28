@@ -1,4 +1,4 @@
-const database = [
+const database = [ 
     {
         "id": 1,
         "name": "Fender Stratocaster",
@@ -52,3 +52,4 @@ const database = [
     }
 ];
 console.log(database);
+
