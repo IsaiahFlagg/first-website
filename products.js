@@ -1,7 +1,7 @@
 const database = [ 
     {
         "id": 1,
-        "name": "Fender Stratocaster",
+        "name": 'Fender Stratocaster',
         "price": 699.00
     },
     {
@@ -52,4 +52,22 @@ const database = [
     }
 ];
 console.log(database);
+console.log(database[0]);
+/*JSON.stringify(); This is a json method 
+you have to add Javascript to it to see it on the screen*/
+document.getElementById("myid").innerHTML = JSON.stringify(database[0].name) + " " + JSON.stringify(database[0].price);
+//Id are Unique
+document.getElementById("item").innerHTML = `${JSON.stringify(database[0].name)} ${JSON.stringify(database[0].price)}`;
+document.getElementById("mytable").innerHTML = `
+<tr ${JSON.stringify(database[0].id)}>
+    <td>${JSON.stringify(database[0].name)}</td>
+    <td>${JSON.stringify(database[0].price)}</td>
+    <td><a href="">*Text here*</a></td>
+</tr>
+
+<tr ${JSON.stringify(database[1].id)}>
+    <td>${JSON.stringify(database[1].name)}</td>
+    <td>${JSON.stringify(database[1].price)}</td>
+    <td><a href="">*Text here*</a></td>
+</tr>`;
 
