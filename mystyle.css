@@ -2,6 +2,8 @@ body{
     background-color: black;
 }
 h1{
+    /* "Home" */
+    text-align: center;
     color: blanchedalmond;
 }
 a{
@@ -21,4 +23,17 @@ table{
 button{
     font-size: large;
     background-color:rgb(0, 217, 255);
+}
+/* the buttons on the home page */
+#fender{
+    
+    margin-left: 550px;
+}
+#about{
+    /* margin-left: 650px; */
+}
+img{
+    margin-left: 550px;
+    max-height: 450px;
+    max-width: 450px;
 }
